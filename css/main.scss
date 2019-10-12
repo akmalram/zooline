@@ -249,7 +249,7 @@
         }
     }
 
-    &-form input, &-form textarea {
+    &-form input {
         height: 70px;
         border: 1px solid #c6c6c6;
         border-radius: 3px;
@@ -263,18 +263,8 @@
         }
     }
 
-    &-form textarea {
-        padding-top: 10px;
-        height: 100px;
-    }
-
     .input- {
         &name, &tel {
-            @include size(11);
-            @include size-xs(24);
-        }
-
-        &email, &message {
             @include size(24);
         }
     }
@@ -312,7 +302,7 @@
             }
         }
     
-        &-form input , &-form textarea {
+        &-form input {
             height: 50px;
             font-size: 16px;
             color: #3b3b3b;
@@ -322,11 +312,6 @@
             &:focus {
                 outline: none;
             }
-        }
-
-        &-form textarea {
-            height: 70px;
-            padding-top: 10px; 
         }
 
         .btn-submit {

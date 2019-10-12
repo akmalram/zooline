@@ -7,6 +7,9 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -157,52 +160,154 @@ nav .btn-toggle.active .btn-lines:last-of-type {
           transform: rotate(-47deg) translate(4px, -6px);
 }
 
-nav .search {
-  width: 350px;
-  height: 35px;
-  position: relative;
-  -ms-flex-negative: 2;
-      flex-shrink: 2;
+nav .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-nav .search-input {
-  width: 100%;
-  height: 35px;
-  border: 2px solid #8799a3;
-  border-radius: 10px;
+nav .contact .phone-call {
+  padding-right: 10px;
+}
+
+nav .contact .phone-call a {
+  display: block;
+  text-align: right;
+  font-size: 18px;
+  color: #000;
+}
+
+nav .contact .phone-call .phone-number {
+  font-size: 20px;
+}
+
+nav .contact .phone-call .phone-number:hover {
+  text-decoration: underline;
+}
+
+nav .contact .phone-call .call-back {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+nav .contact .phone-call .call-back:hover {
+  color: #0081ff;
+}
+
+@media screen and (max-width: 768px) {
+  nav .contact .phone-call {
+    display: none;
+  }
+}
+
+nav .messengers .btn-telegram {
+  display: inline-block;
+  background: #41B4E6;
+  padding: 10px 25px;
+  color: #fff;
+  border: 1px solid #41B4E6;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 10px;
-}
-
-nav .search-input:focus {
-  outline: none;
-}
-
-nav .search-submit {
-  position: absolute;
-  right: 2px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 35px;
-  height: 30px;
-  background: #fff;
-  border: none;
-  border-radius: 15px;
   font-size: 18px;
-  color: #918d8d;
+  border-radius: 5px;
+  color: #000;
+}
+
+nav .messengers .btn-telegram .fa {
+  display: block;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+nav .messengers .btn-telegram:hover {
+  background: #fff;
+  color: #0081ff;
+}
+
+@media screen and (max-width: 768px) {
+  nav .messengers .btn-telegram {
+    padding: 5px;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .messengers .btn-telegram .text {
+    display: none;
+  }
+}
+
+nav .messengers .btn-whatsapp {
+  display: none;
+  background: #00E676;
+  padding: 10px 25px;
+  color: #fff;
+  border: 1px solid #00E676;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  border-radius: 5px;
+  color: #000;
+}
+
+nav .messengers .btn-whatsapp .fa {
+  display: block;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+nav .messengers .btn-whatsapp:hover {
+  background: #fff;
+  color: #00E676;
+}
+
+@media screen and (max-width: 768px) {
+  nav .messengers .btn-whatsapp {
+    padding: 5px;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .messengers .btn-whatsapp .text {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
   nav {
-    padding: 15px 40px;
+    padding: 15px 20px;
   }
-  nav .search {
-    display: none;
+  nav .logo {
+    width: 145px;
   }
   nav .menu {
     position: relative;
+    -webkit-box-ordinal-group: 112;
+        -ms-flex-order: 111;
+            order: 111;
   }
   nav .menu-list {
     display: block;

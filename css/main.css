@@ -325,7 +325,7 @@
   color: #3b3b3b;
 }
 
-.contacts-form input, .contacts-form textarea {
+.contacts-form input {
   height: 70px;
   border: 1px solid #c6c6c6;
   border-radius: 3px;
@@ -335,26 +335,11 @@
   margin-bottom: 30px;
 }
 
-.contacts-form input:focus, .contacts-form textarea:focus {
+.contacts-form input:focus {
   outline: none;
 }
 
-.contacts-form textarea {
-  padding-top: 10px;
-  height: 100px;
-}
-
 .contacts .input-name, .contacts .input-tel {
-  width: calc(45.83333% - 30px);
-}
-
-@media screen and (max-width: 576px) {
-  .contacts .input-name, .contacts .input-tel {
-    width: calc(100% - 30px);
-  }
-}
-
-.contacts .input-email, .contacts .input-message {
   width: calc(100% - 30px);
 }
 
@@ -388,19 +373,15 @@
   .contacts-form p {
     font-size: 14px;
   }
-  .contacts-form input, .contacts-form textarea {
+  .contacts-form input {
     height: 50px;
     font-size: 16px;
     color: #3b3b3b;
     padding: 0 22px;
     margin-bottom: 30px;
   }
-  .contacts-form input:focus, .contacts-form textarea:focus {
+  .contacts-form input:focus {
     outline: none;
-  }
-  .contacts-form textarea {
-    height: 70px;
-    padding-top: 10px;
   }
   .contacts .btn-submit {
     width: 100%;

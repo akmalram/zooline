@@ -23,14 +23,6 @@
     <header>
         <nav>
             <div class="logo"><img src="./images/zool.png" alt="Логотип"></div>
-            <div class="search">
-                <form class="search-form">
-                    <input type="search" name="search" class="search-input" placeholder="Найти лучшее для вашего питомца…">
-                    <button type="submit" class="search-submit">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </form>
-            </div>
             <div class="menu">
                 <div class="btn-toggle">
                     <span class="btn-lines"></span>
@@ -50,6 +42,24 @@
                     <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">О нашем продукте</a></li>
                 </ul>
+            </div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="contact">
+                <div class="phone-call">
+                    <a href="tel:#" class="phone-number">+998911231223</a>
+                    <a href="#contacts" class="call-back">Вам перезвонить?</a>
+                </div>
+                <div class="messengers">
+                    <a href="#" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="text">Написать</span>
+                    </a>
+                    <a href="#" class="btn-telegram">
+                        <i class="fab fa-telegram"></i>
+                        <span class="text">Написать</span>
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
@@ -141,12 +151,10 @@
             <p>Позвоните по телефону <a href="tel:+998911231223">+988 (91) 123-12-23</a> или закажите обратный звонок</p>
         </div>
         <div class="contacts" id="contacts">
-            <p class="contacts-heading">Есть вопросы? <br> <b>Напишите нам</b></p>
+            <p class="contacts-heading">Напишите нам <br> <b>И мы вам перезвоним</b></p>
             <form action="Null" class="contacts-form">
                 <input type="text" class="input-name" name="name" placeholder="Имя" required="true">
                 <input type="text" class="input-tel" name="phone" placeholder="Телефон" required="true">
-                <input type="email" class="input-email" name="type" placeholder="E-mail">
-                <textarea class="input-message" name="message" placeholder="Напишите письмо" required="true"></textarea>
                 <button type="submit" name="submit" class="btn-submit">Отправить</button>
             </form>
         </div>
