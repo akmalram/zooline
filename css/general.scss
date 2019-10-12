@@ -1,0 +1,84 @@
+@import './smart-grid.scss';
+
+@include reset();
+
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    @include wrapper();
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.title-primary {
+    color: #252525;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 46px;
+    text-transform: none;
+    text-align: center;
+
+    @include sm-block {
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
+
+.row {
+    @include row-flex();
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-primary {
+    box-shadow: 0px 10px 30px 0px rgba(37,37,37,.5);
+    font-size: 14px;
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all .3s;
+    border-radius: 25px;
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0 50px;
+    text-decoration: none;
+}
+
+.btn-green {
+    background-color: #0c8449;
+    
+    &:hover {
+        box-shadow: 0px 10px 30px 0px rgba(12, 132, 73, .5);
+    }
+}
+
+.btn-blue {
+    background-color: #0081ff;
+    box-sizing: border-box;
+    border: 1px solid #0081ff;
+    transition: all .3s;
+}
+
+.btn-blue.animated {
+    &:hover {
+        background-color: #fff;
+        color: #0081ff;
+    }
+}

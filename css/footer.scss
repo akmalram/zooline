@@ -1,0 +1,66 @@
+@import 'smart-grid.scss';
+@import './mixins';
+
+footer {
+    @include content-padding();
+    .row {
+        justify-content: space-evenly;
+    }
+    .site-map, .address, .links {
+        @include col();
+        @include size(6);
+        @include size-sm(12);
+        @include size-xs(22);
+
+        @include sm-block {
+            margin-bottom: 40px;
+        }
+    }
+
+    .logo {
+        max-width: 300px;
+    }
+
+    .col-heading {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .list {
+        &-link {
+            font-size: 18px;
+            color: #3b3b3b;
+            display: inline-block;
+            padding: 5px 0;
+        }
+    }
+
+    .address {
+        font-size: 18px;
+
+        a {
+            color: #3b3b3b;
+            text-decoration: underline;
+        }
+    }
+
+    .socials {
+        .list-link {
+            font-size: 24px;
+            transition: text-shadow .3s;
+
+            i {
+                width: 20px;
+                font-size: 20px;
+            }
+
+            &:hover {
+                text-shadow: 0 0 30px #3b3b3b;
+            }
+        }
+    }
+
+    @include sm-block {
+        text-align: center;
+    }
+}
